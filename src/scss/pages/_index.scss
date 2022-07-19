@@ -7,6 +7,7 @@
       border-radius: 5px;
       padding: 5px;
       background-color: $color-bg;
+      color: $color-white;
     }
     #userInput::placeholder {
       color: $color-white;
@@ -15,6 +16,7 @@
       background-color: $color-primary;
       color: $color-white;
       font-weight: 900;
+      font-size: 0.8rem;
       padding: 5px;
       border: none;
       border-radius: 5px;
@@ -25,6 +27,7 @@
       background-color: $color-primary;
       color: $color-white;
       font-weight: 900;
+      font-size: 0.8rem;
       padding: 5px;
       border: none;
       border-radius: 5px;
@@ -105,7 +108,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 20rem;
         padding: 15px 15px 15px 15px;
         h3 {
           padding: 10px;
@@ -135,14 +137,17 @@
     &--resetFavButton {
       display: flex;
       flex-direction: column;
-      justify-self: center;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
       background-color: $color-secondary;
       color: $color-bg;
       font-weight: 900;
+      font-size: 0.8rem;
       padding: 5px;
       border: none;
       border-radius: 5px;
-      width: 120px;
+      width: 50%;
     }
     &--listFav {
       list-style: none;

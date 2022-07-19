@@ -28,15 +28,14 @@ function getDataApi() {
 
 // RENDER SERIES
 
-const imageSource2replace =
-  'https://cdn.myanimelist.net/img/sp/icon/apple-touch-icon-256.png';
-
 function renderSeries() {
   let html = '';
   for (const oneSerie of series) {
     html += `<li class="js-search-id" id="${oneSerie.mal_id}">`;
 
     let image2show = `<div><img src=${oneSerie.images.jpg.image_url}></div>`;
+    const imageSource2replace =
+      'https://cdn.myanimelist.net/img/sp/icon/apple-touch-icon-256.png';
 
     // If the image does not have a picture replace for default
     if (
@@ -102,6 +101,8 @@ function renderFav() {
     html += `<li class="js-search-id" id="${oneSerie.mal_id}">`;
 
     let image2show = `<div><img src=${oneSerie.images.jpg.image_url}></div>`;
+    const imageSource2replace =
+      'https://cdn.myanimelist.net/img/sp/icon/apple-touch-icon-256.png';
 
     // If the image does not have a picture replace for default
     if (
