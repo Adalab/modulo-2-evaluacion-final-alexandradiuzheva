@@ -1,0 +1,156 @@
+.section1 {
+  &__form {
+    padding-bottom: 2rem;
+    &--userInput {
+      width: 35%;
+      border: 2px solid $color-primary;
+      border-radius: 5px;
+      padding: 5px;
+      background-color: $color-bg;
+    }
+    #userInput::placeholder {
+      color: $color-white;
+    }
+    &--searchButton {
+      background-color: $color-primary;
+      color: $color-white;
+      font-weight: 900;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      width: 80px;
+      margin: 0 10px 0 20px;
+    }
+    &--resetButton {
+      background-color: $color-primary;
+      color: $color-white;
+      font-weight: 900;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      width: 80px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.mySeries {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: space-between;
+  justify-content: flex-start;
+  &__section2 {
+    width: 80%;
+    min-height: 25rem;
+    margin: 0 20px 0 20px;
+    border: 6px solid $color-white;
+    border-radius: 5px;
+    &--title {
+      font-size: 1.2rem;
+      text-align: center;
+      background-color: $color-white;
+      padding: 5px 0 10px 0;
+    }
+    &--container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 20px 0 20px 0;
+      li {
+        display: inline-block;
+        width: 15rem;
+        padding: 15px 0 15px 0;
+        margin: 5px;
+        h3 {
+          padding: 10px;
+          font-size: 1rem;
+          color: $color-white;
+        }
+        img {
+          border-radius: 10px;
+          height: 18rem;
+        }
+      }
+    }
+    &--listSeries {
+      list-style: none;
+      max-width: 90%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+  }
+  &__section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin-right: 20px;
+    border: 6px solid $color-secondary;
+    border-radius: 5px;
+    &--title {
+      font-size: 1.2rem;
+      text-align: center;
+      background-color: $color-secondary;
+      padding: 5px 0 10px 0;
+      width: 100%;
+    }
+    &--container {
+      padding: 20px 0 20px 0;
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 20rem;
+        padding: 15px 15px 15px 15px;
+        h3 {
+          padding: 10px;
+          font-size: 1rem;
+          color: $color-secondary;
+          text-align: left;
+        }
+        img {
+          border-radius: 10px;
+          width: 6rem;
+          padding-right: 10px;
+        }
+        button {
+          border-radius: 50%;
+          height: 30px;
+          width: 30px;
+          border: none;
+          padding: 5px;
+          background-color: $color-secondary;
+          color: $color-bg;
+          font-weight: 900;
+          font-size: 1.2rem;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    &--resetFavButton {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      background-color: $color-secondary;
+      color: $color-bg;
+      font-weight: 900;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      width: 120px;
+    }
+    &--listFav {
+      list-style: none;
+    }
+  }
+}
+.new-color {
+  border: 3px solid $color-primary;
+  border-radius: 5px;
+  color: $color-primary;
+}
