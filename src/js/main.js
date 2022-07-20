@@ -8,6 +8,7 @@ const resetButton = document.querySelector('.js-resetButton');
 const listSeries = document.querySelector('.js-listSeries');
 const listFav = document.querySelector('.js-listFav');
 const resetFavButton = document.querySelector('.js-resetFavButton');
+const logButton = document.querySelector('.js-logButton');
 
 // ARRAYS
 let series = [];
@@ -47,6 +48,7 @@ function renderSeries() {
 
     html += image2show;
     html += `<h3>${oneSerie.title}</h3>`;
+    html += `<h3>${oneSerie.episodes}</h3>`;
     html += `</li>`;
   }
   listSeries.innerHTML = html;
@@ -131,7 +133,7 @@ function removeFromList(ev) {
   renderFav();
 }
 
-// REMOVE ALL FAVORITES AND RESET OF LOCAL STORAGE
+// REMOVE ALL FAVORITES
 function resetFavlist() {
   listFav.innerHTML = '';
   favorites = [];
@@ -166,11 +168,19 @@ function resetFav(event) {
   resetFavlist();
 }
 
+function handleLog(event) {
+  event.preventDefault();
+  for (const oneSerie of series) {
+    console.log(oneSerie.title);
+  }
+}
+
 // EVENTS LISTENERS
 
 searchButton.addEventListener('click', handleClick);
 resetButton.addEventListener('click', resetClick);
 resetFavButton.addEventListener('click', resetFav);
+logButton.addEventListener('click', handleLog);
 
 function handleClickFav() {
   const fav = document.querySelectorAll('.js-search-id');
